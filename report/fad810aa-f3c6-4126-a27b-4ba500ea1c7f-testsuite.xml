@@ -1,0 +1,62 @@
+<ns0:test-suite xmlns:ns0="urn:model.allure.qatools.yandex.ru" start="1545747610670" stop="1545747610741">
+  <name>test_01</name>
+  <labels/>
+  <test-cases>
+    <test-case start="1545747610670" status="passed" stop="1545747610680">
+      <name>Test_a.test_a</name>
+      <attachments/>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="6384-MainThread"/>
+        <label name="host" value="admin-PC"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps>
+        <step start="1545747610679" status="passed" stop="1545747610680">
+          <name>我是测试用例1</name>
+          <title>我是测试用例1</title>
+          <attachments/>
+          <steps/>
+        </step>
+      </steps>
+    </test-case>
+    <test-case start="1545747610682" status="failed" stop="1545747610741">
+      <name>Test_a.test_b</name>
+      <failure>
+        <message>AssertionError: assert 0</message>
+        <stack-trace>self = &lt;test_01.Test_a object at 0x0000000004274208&gt;
+
+    @allure.step('测试登录的步骤')
+    def test_b(self):
+        print("\n2222")
+        allure.attach('hello!','我是测试步骤001的描述')
+        print("\n3333")
+        allure.attach('bye!', '我是测试步骤001的描述')
+&gt;       assert 0
+E       assert 0
+
+script\test_01.py:14: AssertionError</stack-trace>
+      </failure>
+      <attachments/>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="6384-MainThread"/>
+        <label name="host" value="admin-PC"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps>
+        <step start="1545747610684" status="failed" stop="1545747610688">
+          <name>测试登录的步骤</name>
+          <title>测试登录的步骤</title>
+          <attachments>
+            <attachment source="dba0a548-3004-4de7-b218-e5ac161a4553-attachment.txt" title="hello!" type="text/plain"/>
+            <attachment source="66aa0df9-c26e-4fe4-876c-709612be1f2c-attachment.txt" title="bye!" type="text/plain"/>
+          </attachments>
+          <steps/>
+        </step>
+      </steps>
+    </test-case>
+  </test-cases>
+</ns0:test-suite>
